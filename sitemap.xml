@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+>
+
+
+  <!-- HOME -->
+
+  <url>
+    <loc>https://arverse-digital.netlify.app/</loc>
+  </url>
+
+
+
+  <!-- CAPABILITIES -->
+
+  <url>
+    <loc>https://arverse-digital.netlify.app/pages/capabilities.html</loc>
+  </url>
+
+
+
+  <!-- WORK -->
+
+  <url>
+    <loc>https://arverse-digital.netlify.app/pages/work.html</loc>
+  </url>
+
+
+
+  <!-- PROTOCOL -->
+
+  <url>
+    <loc>https://arverse-digital.netlify.app/pages/protocol.html</loc>
+  </url>
+
+
+
+  <!-- INTELLIGENCE -->
+
+  <url>
+    <loc>https://arverse-digital.netlify.app/pages/intelligence.html</loc>
+  </url>
+
+
+
+  <!-- PRICING -->
+
+  <url>
+    <loc>https://arverse-digital.netlify.app/pages/pricing.html</loc>
+  </url>
+
+
+
+  <!-- CONTACT -->
+
+  <url>
+    <loc>https://arverse-digital.netlify.app/pages/contact.html</loc>
+  </url>
+
+
+
+  <!-- PRIVACY POLICY -->
+
+  <url>
+    <loc>https://arverse-digital.netlify.app/pages/privacy-policy.html</loc>
+  </url>
+
+
+
+  <!-- TERMS & CONDITIONS -->
+
+  <url>
+    <loc>https://arverse-digital.netlify.app/pages/terms.html</loc>
+  </url>
+
+<url>
+  <loc>https://arverse-digital.netlify.app/pages/cookie-policy.html</loc>
+</url>
+
+
+</urlset>

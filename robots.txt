@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /pages/thank-you.html
+
+Sitemap: https://arverse-digital.netlify.app/sitemap.xml
