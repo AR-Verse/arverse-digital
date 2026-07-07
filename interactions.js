@@ -1226,3 +1226,134 @@
 
 
 })();
+/* =========================================================
+   WORK PAGE — DEMAND CAPTURE INTERACTION
+========================================================= */
+
+(() => {
+
+
+  const cards =
+    Array.from(
+      document.querySelectorAll(
+        ".wdc-journey-card"
+      )
+    );
+
+
+  const analysisOutput =
+    document.getElementById(
+      "wdcActiveAnalysis"
+    );
+
+
+  if (
+    !cards.length ||
+    !analysisOutput
+  ) {
+
+    return;
+
+  }
+
+
+
+  const activateCard =
+    (selectedCard) => {
+
+
+      cards.forEach(
+        (card) => {
+
+
+          card.classList.remove(
+            "is-active"
+          );
+
+
+          card.setAttribute(
+            "aria-pressed",
+            "false"
+          );
+
+
+        }
+      );
+
+
+      selectedCard.classList.add(
+        "is-active"
+      );
+
+
+      selectedCard.setAttribute(
+        "aria-pressed",
+        "true"
+      );
+
+
+      const analysis =
+        selectedCard.dataset.analysis;
+
+
+      if (analysis) {
+
+        analysisOutput.textContent =
+          analysis;
+
+      }
+
+
+    };
+
+
+
+  cards.forEach(
+    (card) => {
+
+
+      card.addEventListener(
+        "click",
+        () => {
+
+          activateCard(card);
+
+        }
+      );
+
+
+
+      card.addEventListener(
+        "keydown",
+        (event) => {
+
+
+          if (
+            event.key === "Enter" ||
+            event.key === " "
+          ) {
+
+
+            event.preventDefault();
+
+
+            activateCard(card);
+
+
+          }
+
+
+        }
+      );
+
+
+    }
+  );
+
+
+  console.log(
+    "[ARVERSE WORK] Demand Capture interaction ready."
+  );
+
+
+})();

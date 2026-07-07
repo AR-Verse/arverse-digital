@@ -3,4 +3,4 @@ Allow: /
 
 Disallow: /pages/thank-you.html
 
-Sitemap: https://arverse-digital.netlify.app/sitemap.xml
+Sitemap: https://arverse-agency.netlify.app/sitemap.xml

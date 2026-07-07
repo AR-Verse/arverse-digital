@@ -69626,3 +69626,1641 @@ body:has(.thank-page) .arx-comet-three{
   }
 
 }
+/* =========================================================
+   ARVERSE PHILOSOPHY CARDS — FINAL REPAIR
+========================================================= */
+
+.abf-philosophy-strip{
+  width:100% !important;
+
+  display:grid !important;
+
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr)) !important;
+
+  gap:0 !important;
+
+  align-items:stretch !important;
+
+  border-top:
+    1px solid rgba(255,255,255,.08) !important;
+
+  border-left:
+    1px solid rgba(255,255,255,.08) !important;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.abf-philosophy-card{
+  position:relative !important;
+
+  width:100% !important;
+
+  min-width:0 !important;
+
+  min-height:470px !important;
+
+  height:auto !important;
+
+  padding:0 !important;
+
+  display:flex !important;
+
+  flex-direction:column !important;
+
+  align-items:stretch !important;
+
+  justify-content:flex-start !important;
+
+  overflow:hidden !important;
+
+  border-right:
+    1px solid rgba(255,255,255,.08) !important;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.08) !important;
+
+  background:#040611 !important;
+}
+
+
+/* =========================================================
+   SAME IMAGE SIZE FOR ALL 4
+========================================================= */
+
+.abf-philosophy-image{
+  position:relative !important;
+
+  width:100% !important;
+
+  height:220px !important;
+
+  min-height:220px !important;
+
+  max-height:220px !important;
+
+  aspect-ratio:auto !important;
+
+  overflow:hidden !important;
+
+  flex:none !important;
+
+  margin:0 !important;
+
+  padding:0 !important;
+
+  background:#080a14 !important;
+}
+
+
+.abf-philosophy-image img{
+  position:absolute !important;
+
+  inset:0 !important;
+
+  width:100% !important;
+
+  height:100% !important;
+
+  min-height:0 !important;
+
+  max-height:none !important;
+
+  display:block !important;
+
+  object-fit:cover !important;
+
+  object-position:center !important;
+
+  margin:0 !important;
+
+  padding:0 !important;
+
+  transform:none !important;
+
+  filter:
+    brightness(.63)
+    contrast(1.08)
+    saturate(.72) !important;
+}
+
+
+/* FIRST IMAGE POSITION */
+
+.abf-philosophy-card:nth-child(1)
+.abf-philosophy-image img{
+  object-position:center 35% !important;
+}
+
+
+/* SECOND IMAGE POSITION */
+
+.abf-philosophy-card:nth-child(2)
+.abf-philosophy-image img{
+  object-position:center !important;
+}
+
+
+/* THIRD IMAGE POSITION */
+
+.abf-philosophy-card:nth-child(3)
+.abf-philosophy-image img{
+  object-position:center !important;
+}
+
+
+/* FOURTH IMAGE POSITION */
+
+.abf-philosophy-card:nth-child(4)
+.abf-philosophy-image img{
+  object-position:center 55% !important;
+}
+
+
+/* =========================================================
+   OVERLAY
+========================================================= */
+
+.abf-philosophy-image-shade{
+  position:absolute !important;
+
+  inset:0 !important;
+
+  z-index:2 !important;
+
+  pointer-events:none !important;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(4,6,17,1) 0%,
+      rgba(4,6,17,.35) 45%,
+      rgba(4,6,17,.05) 100%
+    ) !important;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.abf-philosophy-number{
+  position:absolute !important;
+
+  top:14px !important;
+  left:14px !important;
+
+  z-index:4 !important;
+
+  color:#67e8f9 !important;
+
+  font-family:monospace !important;
+
+  font-size:7px !important;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.abf-philosophy-content{
+  width:100% !important;
+
+  min-height:250px !important;
+
+  flex:1 !important;
+
+  padding:
+    24px 20px
+    26px !important;
+
+  display:flex !important;
+
+  flex-direction:column !important;
+
+  align-items:flex-start !important;
+
+  justify-content:flex-start !important;
+
+  text-align:left !important;
+}
+
+
+.abf-philosophy-content small{
+  margin:0 !important;
+
+  color:#67e8f9 !important;
+
+  font-family:monospace !important;
+
+  font-size:6px !important;
+
+  letter-spacing:.7px !important;
+}
+
+
+.abf-philosophy-content strong{
+  display:block !important;
+
+  margin:
+    14px 0
+    0 !important;
+
+  color:#fff !important;
+
+  font-size:
+    clamp(25px,2.2vw,36px) !important;
+
+  line-height:.92 !important;
+
+  letter-spacing:-2px !important;
+}
+
+
+.abf-philosophy-content p{
+  margin:
+    auto 0
+    0 !important;
+
+  padding-top:26px !important;
+
+  color:
+    rgba(255,255,255,.48) !important;
+
+  font-size:11px !important;
+
+  line-height:1.7 !important;
+}
+/* =========================================================
+   PHILOSOPHY CARDS — TABLET
+========================================================= */
+
+@media(max-width:1100px){
+
+  .abf-philosophy-strip{
+    grid-template-columns:
+      repeat(2, minmax(0,1fr)) !important;
+  }
+
+
+  .abf-philosophy-image{
+    height:240px !important;
+
+    min-height:240px !important;
+
+    max-height:240px !important;
+  }
+
+
+  .abf-philosophy-card{
+    min-height:490px !important;
+  }
+
+}
+/* =========================================================
+   PHILOSOPHY CARDS — MOBILE
+========================================================= */
+
+@media(max-width:700px){
+
+  .abf-philosophy-strip{
+    grid-template-columns:
+      1fr !important;
+  }
+
+
+  .abf-philosophy-card{
+    min-height:auto !important;
+
+    animation:none !important;
+
+    transition:none !important;
+
+    transform:none !important;
+  }
+
+
+  .abf-philosophy-image{
+    height:235px !important;
+
+    min-height:235px !important;
+
+    max-height:235px !important;
+  }
+
+
+  .abf-philosophy-image img{
+    transform:none !important;
+
+    animation:none !important;
+
+    transition:none !important;
+  }
+
+
+  .abf-philosophy-content{
+    min-height:220px !important;
+
+    padding:
+      22px 18px
+      24px !important;
+  }
+
+
+  .abf-philosophy-content strong{
+    font-size:32px !important;
+  }
+
+}
+/* =========================================================
+   PRINCIPLE CARDS — IMAGE SIZE FIX
+========================================================= */
+
+.principle-card-image{
+  width:100% !important;
+
+  height:260px !important;
+
+  min-height:260px !important;
+
+  max-height:260px !important;
+
+  display:block !important;
+
+  object-fit:cover !important;
+
+  object-position:center !important;
+
+  margin:18px 0 14px !important;
+
+  border-radius:0 !important;
+
+  filter:
+    brightness(.72)
+    contrast(1.08)
+    saturate(.78);
+}
+/* =========================================================
+   ARVERSE CORE PRINCIPLES — CLEAN FINAL GRID
+========================================================= */
+
+.arp-principles-grid{
+  width:100% !important;
+
+  display:grid !important;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr)) !important;
+
+  gap:0 !important;
+
+  align-items:stretch !important;
+
+  margin-top:60px;
+
+  border-top:
+    1px solid rgba(255,255,255,.08);
+
+  border-left:
+    1px solid rgba(255,255,255,.08);
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.arp-principle-card{
+  position:relative !important;
+
+  width:100% !important;
+
+  min-width:0 !important;
+
+  min-height:560px !important;
+
+  padding:
+    24px 22px
+    28px !important;
+
+  display:flex !important;
+
+  flex-direction:column !important;
+
+  align-items:stretch !important;
+
+  justify-content:flex-start !important;
+
+  overflow:hidden !important;
+
+  border-right:
+    1px solid rgba(255,255,255,.08);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.08);
+
+  background:
+    rgba(255,255,255,.008) !important;
+
+  opacity:1 !important;
+
+  visibility:visible !important;
+
+  transform:none !important;
+}
+
+
+/* =========================================================
+   TOP LABEL
+========================================================= */
+
+.arp-principle-top{
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  margin-bottom:55px;
+}
+
+
+.arp-principle-top small{
+  color:#67e8f9;
+
+  font-family:monospace;
+
+  font-size:6px;
+
+  letter-spacing:1px;
+}
+
+
+.arp-principle-top span{
+  width:7px;
+  height:7px;
+
+  border-radius:50%;
+
+  background:#22d3ee;
+
+  box-shadow:
+    0 0 12px rgba(34,211,238,.65);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.arp-principle-card h3{
+  margin:
+    0 0
+    22px !important;
+
+  color:#fff !important;
+
+  font-size:
+    clamp(28px,3vw,44px) !important;
+
+  line-height:.95 !important;
+
+  letter-spacing:-3px !important;
+}
+
+
+/* =========================================================
+   IMAGE FRAME
+========================================================= */
+
+.arp-principle-media{
+  position:relative;
+
+  width:100% !important;
+
+  height:240px !important;
+
+  min-height:240px !important;
+
+  max-height:240px !important;
+
+  overflow:hidden !important;
+
+  flex:none !important;
+
+  margin:
+    0 0
+    20px !important;
+
+  background:#070913;
+}
+
+
+.arp-principle-media img{
+  position:absolute !important;
+
+  inset:0 !important;
+
+  width:100% !important;
+
+  height:100% !important;
+
+  display:block !important;
+
+  object-fit:cover !important;
+
+  object-position:center !important;
+
+  transform:none !important;
+
+  filter:
+    brightness(.66)
+    contrast(1.08)
+    saturate(.75) !important;
+}
+
+
+/* middle image crop adjustment */
+
+.arp-principle-card:nth-child(2)
+.arp-principle-media img{
+  object-position:center 38% !important;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.arp-principle-card p{
+  margin:
+    auto 0
+    0 !important;
+
+  padding-top:8px;
+
+  color:
+    rgba(255,255,255,.47) !important;
+
+  font-size:12px !important;
+
+  line-height:1.75 !important;
+}
+@media(max-width:1000px){
+
+  .arp-principles-grid{
+    grid-template-columns:
+      1fr !important;
+  }
+
+
+  .arp-principle-card{
+    min-height:auto !important;
+  }
+
+
+  .arp-principle-media{
+    height:320px !important;
+
+    min-height:320px !important;
+
+    max-height:320px !important;
+  }
+
+}
+@media(max-width:700px){
+
+  .arp-principles-grid{
+    grid-template-columns:
+      1fr !important;
+
+    margin-top:40px;
+  }
+
+
+  .arp-principle-card{
+    min-height:auto !important;
+
+    padding:
+      20px 17px
+      24px !important;
+
+    animation:none !important;
+
+    transition:none !important;
+
+    transform:none !important;
+  }
+
+
+  .arp-principle-top{
+    margin-bottom:35px;
+  }
+
+
+  .arp-principle-card h3{
+    font-size:
+      34px !important;
+  }
+
+
+  .arp-principle-media{
+    height:220px !important;
+
+    min-height:220px !important;
+
+    max-height:220px !important;
+  }
+
+
+  .arp-principle-media img{
+    animation:none !important;
+
+    transition:none !important;
+
+    transform:none !important;
+  }
+
+}
+/* =========================================================
+   GOOGLE SYSTEM FOUNDATIONS — IMAGE CARDS
+========================================================= */
+
+.gfd-foundation-grid{
+  width:100%;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(3,minmax(0,1fr));
+
+  gap:0;
+
+  align-items:stretch;
+
+  border-top:
+    1px solid rgba(255,255,255,.07);
+
+  border-left:
+    1px solid rgba(255,255,255,.07);
+}
+
+
+
+/* =========================================================
+   FOUNDATION CARD
+========================================================= */
+
+.gfd-foundation-card{
+  position:relative;
+
+  min-width:0;
+
+  min-height:520px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  overflow:hidden;
+
+  border-right:
+    1px solid rgba(255,255,255,.07);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.07);
+
+  background:
+    rgba(255,255,255,.006);
+}
+
+
+
+/* =========================================================
+   IMAGE FRAME
+========================================================= */
+
+.gfd-foundation-media{
+  position:relative;
+
+  width:100%;
+
+  height:250px;
+
+  min-height:250px;
+
+  overflow:hidden;
+
+  flex:none;
+
+  background:#050713;
+}
+
+
+.gfd-foundation-media img{
+  position:absolute;
+
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  display:block;
+
+  object-fit:cover;
+
+  object-position:center;
+
+  transform:none;
+
+  filter:
+    brightness(.62)
+    contrast(1.1)
+    saturate(.72);
+}
+
+
+
+/* =========================================================
+   INDIVIDUAL IMAGE POSITIONING
+========================================================= */
+
+.gfd-foundation-card:nth-child(1)
+.gfd-foundation-media img{
+  object-position:center 45%;
+}
+
+
+.gfd-foundation-card:nth-child(2)
+.gfd-foundation-media img{
+  object-position:center 50%;
+}
+
+
+.gfd-foundation-card:nth-child(3)
+.gfd-foundation-media img{
+  object-position:center 40%;
+}
+
+
+
+/* =========================================================
+   IMAGE SHADE
+========================================================= */
+
+.gfd-foundation-shade{
+  position:absolute;
+
+  inset:0;
+
+  z-index:2;
+
+  pointer-events:none;
+
+  background:
+
+    linear-gradient(
+      to top,
+      rgba(3,5,15,1) 0%,
+      rgba(3,5,15,.35) 42%,
+      transparent 75%
+    ),
+
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.06),
+      transparent 45%,
+      rgba(34,211,238,.05)
+    );
+}
+
+
+
+/* =========================================================
+   IMAGE INDEX
+========================================================= */
+
+.gfd-media-index{
+  position:absolute;
+
+  top:15px;
+  right:15px;
+
+  z-index:3;
+
+  min-width:30px;
+  height:30px;
+
+  display:grid;
+
+  place-items:center;
+
+  border:
+    1px solid rgba(255,255,255,.1);
+
+  border-radius:50%;
+
+  color:#67e8f9;
+
+  font-family:monospace;
+
+  font-size:6px;
+
+  background:
+    rgba(2,3,10,.65);
+}
+
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.gfd-foundation-content{
+  flex:1;
+
+  min-height:270px;
+
+  padding:
+    25px 24px
+    28px;
+
+  display:flex;
+
+  flex-direction:column;
+}
+
+
+.gfd-foundation-content small{
+  color:#67e8f9;
+
+  font-family:monospace;
+
+  font-size:6px;
+
+  letter-spacing:.8px;
+}
+
+
+.gfd-foundation-content h3{
+  margin:
+    55px 0
+    18px;
+
+  color:#fff;
+
+  font-size:
+    clamp(28px,2.7vw,43px);
+
+  line-height:.94;
+
+  letter-spacing:-3px;
+}
+
+
+.gfd-foundation-content p{
+  margin-top:auto;
+
+  max-width:430px;
+
+  color:
+    rgba(255,255,255,.48);
+
+  font-size:12px;
+
+  line-height:1.7;
+}
+/* =========================================================
+   DESKTOP HOVER ONLY
+========================================================= */
+
+@media(min-width:769px){
+
+  .gfd-foundation-card{
+    transition:
+      background .3s ease;
+  }
+
+
+  .gfd-foundation-media img{
+    transition:
+      filter .35s ease;
+  }
+
+
+  .gfd-foundation-card:hover{
+    background:
+      rgba(34,211,238,.012);
+  }
+
+
+  .gfd-foundation-card:hover
+  .gfd-foundation-media img{
+    filter:
+      brightness(.7)
+      contrast(1.1)
+      saturate(.82);
+  }
+
+}
+/* =========================================================
+   GOOGLE FOUNDATIONS — TABLET
+========================================================= */
+
+@media(max-width:1000px){
+
+  .gfd-foundation-grid{
+    grid-template-columns:1fr;
+  }
+
+
+  .gfd-foundation-card{
+    min-height:auto;
+  }
+
+
+  .gfd-foundation-media{
+    height:340px;
+
+    min-height:340px;
+  }
+
+
+  .gfd-foundation-content{
+    min-height:230px;
+  }
+
+
+  .gfd-foundation-content h3{
+    margin-top:35px;
+  }
+
+}
+/* =========================================================
+   GOOGLE FOUNDATIONS — MOBILE STATIC MODE
+========================================================= */
+
+@media(max-width:700px){
+
+  .gfd-foundation-grid{
+    grid-template-columns:1fr;
+  }
+
+
+  .gfd-foundation-card{
+    min-height:auto;
+
+    animation:none !important;
+
+    transition:none !important;
+
+    transform:none !important;
+  }
+
+
+  .gfd-foundation-media{
+    height:225px;
+
+    min-height:225px;
+  }
+
+
+  .gfd-foundation-media img{
+    transform:none !important;
+
+    animation:none !important;
+
+    transition:none !important;
+
+    filter:
+      brightness(.68)
+      contrast(1.06)
+      saturate(.76);
+  }
+
+
+  .gfd-foundation-content{
+    min-height:220px;
+
+    padding:
+      21px 18px
+      24px;
+  }
+
+
+  .gfd-foundation-content h3{
+    margin-top:30px;
+
+    font-size:34px;
+
+    letter-spacing:-2.5px;
+  }
+
+
+  .gfd-foundation-content p{
+    font-size:11px;
+  }
+
+}
+/* =========================================================
+   WORK PAGE — DEMAND CAPTURE JOURNEY
+========================================================= */
+
+.wdc-journey-grid{
+  width:100%;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(5,minmax(0,1fr));
+
+  gap:0;
+
+  align-items:stretch;
+
+  margin-top:28px;
+
+  border-top:
+    1px solid rgba(255,255,255,.075);
+
+  border-left:
+    1px solid rgba(255,255,255,.075);
+}
+
+
+/* =========================================================
+   JOURNEY CARD
+========================================================= */
+
+.wdc-journey-card{
+  position:relative;
+
+  min-width:0;
+
+  min-height:410px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  overflow:hidden;
+
+  border-right:
+    1px solid rgba(255,255,255,.075);
+
+  border-bottom:
+    1px solid rgba(255,255,255,.075);
+
+  background:
+    rgba(255,255,255,.006);
+}
+
+
+/* ACTIVE FIRST CARD */
+
+.wdc-journey-card.is-active{
+  border-color:
+    rgba(103,232,249,.25);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(34,211,238,.025),
+      rgba(139,92,246,.012)
+    );
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.wdc-journey-media{
+  position:relative;
+
+  width:100%;
+
+  height:155px;
+
+  min-height:155px;
+
+  overflow:hidden;
+
+  flex:none;
+
+  background:#050713;
+}
+
+
+.wdc-journey-media img{
+  position:absolute;
+
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  display:block;
+
+  object-fit:cover;
+
+  object-position:center;
+
+  transform:none;
+
+  filter:
+    brightness(.55)
+    contrast(1.12)
+    saturate(.7);
+}
+
+
+/* =========================================================
+   INDIVIDUAL CROPPING
+========================================================= */
+
+.wdc-journey-card:nth-child(1)
+.wdc-journey-media img{
+  object-position:center 45%;
+}
+
+
+.wdc-journey-card:nth-child(2)
+.wdc-journey-media img{
+  object-position:center 50%;
+}
+
+
+.wdc-journey-card:nth-child(3)
+.wdc-journey-media img{
+  object-position:center 45%;
+}
+
+
+.wdc-journey-card:nth-child(4)
+.wdc-journey-media img{
+  object-position:center 50%;
+}
+
+
+.wdc-journey-card:nth-child(5)
+.wdc-journey-media img{
+  object-position:center 48%;
+}
+
+
+/* =========================================================
+   IMAGE SHADE
+========================================================= */
+
+.wdc-media-shade{
+  position:absolute;
+
+  inset:0;
+
+  z-index:2;
+
+  pointer-events:none;
+
+  background:
+
+    linear-gradient(
+      to top,
+      #040611 0%,
+      rgba(4,6,17,.3) 45%,
+      transparent 80%
+    ),
+
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.07),
+      transparent 45%,
+      rgba(34,211,238,.05)
+    );
+}
+
+
+/* =========================================================
+   IMAGE NUMBER
+========================================================= */
+
+.wdc-media-number{
+  position:absolute;
+
+  top:12px;
+  left:12px;
+
+  z-index:3;
+
+  color:
+    rgba(255,255,255,.5);
+
+  font-family:monospace;
+
+  font-size:6px;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.wdc-journey-content{
+  flex:1;
+
+  padding:
+    20px 15px
+    22px;
+
+  display:flex;
+
+  flex-direction:column;
+}
+
+
+/* NODE */
+
+.wdc-node{
+  width:52px;
+  height:52px;
+
+  display:grid;
+
+  place-items:center;
+
+  border:
+    1px solid rgba(103,232,249,.2);
+
+  border-radius:50%;
+
+  color:#67e8f9;
+
+  background:
+    rgba(34,211,238,.018);
+}
+
+
+.wdc-node span{
+  font-family:monospace;
+
+  font-size:7px;
+
+  font-weight:900;
+}
+
+
+/* TITLE */
+
+.wdc-journey-content h3{
+  margin:
+    38px 0
+    5px;
+
+  color:#fff;
+
+  font-size:
+    clamp(20px,1.7vw,28px);
+
+  line-height:.95;
+
+  letter-spacing:-1.5px;
+}
+
+
+.wdc-journey-content small{
+  color:#67e8f9;
+
+  font-family:monospace;
+
+  font-size:5px;
+}
+
+
+/* DESCRIPTION */
+
+.wdc-journey-content p{
+  margin-top:auto;
+
+  padding-top:25px;
+
+  color:
+    rgba(255,255,255,.4);
+
+  font-size:9px;
+
+  line-height:1.65;
+}
+/* =========================================================
+   DEMAND CAPTURE — MOBILE STATIC
+========================================================= */
+
+@media(max-width:700px){
+
+  .wdc-journey-grid{
+    grid-template-columns:1fr;
+  }
+
+
+  .wdc-journey-card{
+    min-height:auto;
+
+    animation:none !important;
+
+    transition:none !important;
+
+    transform:none !important;
+  }
+
+
+  .wdc-journey-media{
+    height:220px;
+
+    min-height:220px;
+  }
+
+
+  .wdc-journey-media img{
+    transform:none !important;
+
+    transition:none !important;
+
+    animation:none !important;
+
+    filter:
+      brightness(.65)
+      contrast(1.08)
+      saturate(.75);
+  }
+
+
+  .wdc-journey-content{
+    min-height:240px;
+
+    padding:
+      20px 18px
+      24px;
+  }
+
+
+  .wdc-journey-content h3{
+    margin-top:32px;
+
+    font-size:32px;
+  }
+
+
+  .wdc-journey-content p{
+    font-size:11px;
+  }
+
+}
+/* =========================================================
+   DEMAND CAPTURE — TABLET
+========================================================= */
+
+@media(max-width:1100px){
+
+  .wdc-journey-grid{
+    grid-template-columns:
+      repeat(2,minmax(0,1fr));
+  }
+
+
+  .wdc-journey-card{
+    min-height:430px;
+  }
+
+
+  .wdc-journey-media{
+    height:210px;
+
+    min-height:210px;
+  }
+
+}
+/* =========================================================
+   DESKTOP ONLY
+========================================================= */
+
+@media(min-width:769px){
+
+  .wdc-journey-card{
+    transition:
+      background .3s ease;
+  }
+
+
+  .wdc-journey-media img{
+    transition:
+      filter .3s ease;
+  }
+
+
+  .wdc-journey-card:hover{
+    background:
+      rgba(34,211,238,.014);
+  }
+
+
+  .wdc-journey-card:hover
+  .wdc-journey-media img{
+    filter:
+      brightness(.67)
+      contrast(1.1)
+      saturate(.8);
+  }
+
+}
+/* =========================================================
+   INTELLIGENCE INSIGHT CARDS — MEDIA
+========================================================= */
+
+.ifi-media{
+  position:relative;
+
+  width:100%;
+
+  height:190px;
+
+  min-height:190px;
+
+  margin:
+    0 0
+    25px;
+
+  overflow:hidden;
+
+  flex:none;
+
+  border:
+    1px solid rgba(255,255,255,.06);
+
+  background:#050713;
+
+  pointer-events:none;
+}
+
+
+.ifi-media img{
+  position:absolute;
+
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  display:block;
+
+  object-fit:cover;
+
+  object-position:center;
+
+  transform:none;
+
+  pointer-events:none;
+
+  filter:
+    brightness(.58)
+    contrast(1.1)
+    saturate(.7);
+}
+
+
+.ifi-media-shade{
+  position:absolute;
+
+  inset:0;
+
+  z-index:2;
+
+  pointer-events:none;
+
+  background:
+
+    linear-gradient(
+      to top,
+      rgba(3,5,15,.95) 0%,
+      rgba(3,5,15,.18) 50%,
+      transparent 82%
+    ),
+
+    linear-gradient(
+      135deg,
+      rgba(139,92,246,.065),
+      transparent 45%,
+      rgba(34,211,238,.055)
+    );
+}
+/* =========================================================
+   INTELLIGENCE MEDIA — INDIVIDUAL CROPS
+========================================================= */
+
+.ifi-media img[alt*="Marketing reach"]{
+  object-position:center 45%;
+}
+
+
+.ifi-media img[alt*="keyword"]{
+  object-position:center 50%;
+}
+
+
+.ifi-media img[alt*="wireframe"]{
+  object-position:center 45%;
+}
+
+
+.ifi-media img[alt*="checkout"]{
+  object-position:center 50%;
+}
+
+
+.ifi-media img[alt*="software"]{
+  object-position:center 45%;
+}
+
+
+.ifi-media img[alt*="scaling"]{
+  object-position:center 40%;
+}
+@media(min-width:769px){
+
+  .ifi-media img{
+    transition:
+      filter .3s ease;
+  }
+
+
+  .ifi-media:hover img{
+    filter:
+      brightness(.68)
+      contrast(1.08)
+      saturate(.78);
+  }
+
+}
+@media(max-width:700px){
+
+  .ifi-media{
+    height:220px;
+
+    min-height:220px;
+  }
+
+
+  .ifi-media img{
+    animation:none !important;
+
+    transition:none !important;
+
+    transform:none !important;
+
+    filter:
+      brightness(.66)
+      contrast(1.06)
+      saturate(.74);
+  }
+
+
+  .ifi-media-shade{
+    animation:none !important;
+  }
+
+}
+/* =========================================================
+   PRICING SELECTOR — CLICK SAFETY
+========================================================= */
+
+.prm-region-control{
+  position:relative !important;
+  z-index:20 !important;
+}
+
+
+.prm-region-btn{
+  position:relative !important;
+
+  z-index:25 !important;
+
+  pointer-events:auto !important;
+
+  cursor:pointer !important;
+}
+
+
+.prm-region-btn *{
+  pointer-events:none !important;
+}
+
+
+.pricing-page .arx-cosmos,
+.pricing-page .arx-star-field,
+.pricing-page .arx-dust,
+.pricing-page .arx-comet,
+.pricing-page .arx-page-glow{
+  pointer-events:none !important;
+}
